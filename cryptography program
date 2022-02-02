@@ -1,0 +1,15 @@
+clc
+clear all
+disp('This is a cryptography program');
+a=input('write something in: ','s');
+disp('Want to show you your written word"s password');
+b=abs(a);
+c=fliplr(b);
+d=c*2;
+%Want to shw d in GUI
+question='Do you want to see your password?';
+button=questdlg(question,'MI6','Show it','no');
+switch button
+    case'Show it'
+        disp(d)
+end
